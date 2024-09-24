@@ -52,7 +52,7 @@ namespace SeleniumProj
 
             // Wait for the results page to load and display the results
             // It's better to use explicit waits in real tests
-            System.Threading.Thread.Sleep(2000);
+            Thread.Sleep(2000);
 
             // Verify that the page title contains the search term
             Assert.IsTrue(driver.Title.Contains("Selenium WebDriver"), "The page title does not contain the search term.");
